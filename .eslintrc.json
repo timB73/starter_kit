@@ -21,6 +21,7 @@
   "plugins": ["react", "truffle"],
   "rules": {
     "linebreak-style": "off",
-    "func-names": "off"
+    "func-names": "off",
+    "space-before-function-paren": "off"
   }
 }
