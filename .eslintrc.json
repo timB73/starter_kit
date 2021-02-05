@@ -22,6 +22,8 @@
   "rules": {
     "linebreak-style": "off",
     "func-names": "off",
-    "space-before-function-paren": "off"
+    "space-before-function-paren": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "comma-dangle": ["error", "never"]
   }
 }
