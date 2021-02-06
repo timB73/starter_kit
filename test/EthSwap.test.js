@@ -4,9 +4,7 @@ const Token = artifacts.require('Token');
 const EthSwap = artifacts.require('EthSwap');
 
 // Configure Chai
-require('chai')
-  .use(require('chai-as-promised'))
-  .should();
+require('chai').use(require('chai-as-promised')).should();
 
 function tokens(n) {
   return web3.utils.toWei(n, 'ether');
@@ -50,7 +48,7 @@ contract('EthSwap', ([deployer, investor]) => {
       // Purchase tokens before each test
       result = await ethSwap.buyTokens({
         from: investor,
-        value: web3.utils.toWei('1', 'ether'),
+        value: web3.utils.toWei('1', 'ether')
       });
     });
 
